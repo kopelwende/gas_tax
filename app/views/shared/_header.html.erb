@@ -1,0 +1,17 @@
+<%# CSS・・・assets/stylesheets/shared/header.css %>
+<header class='top-page-header'>
+  <h1 class="title">ガソリン代ダイエット</h1>
+  <div class='nav'>
+    <ul class='lists-left'>
+      <li>全国平均ガソリン単価<%#="#"%></li>
+    </ul>
+    <ul class='lists-right'>
+      <%# deviseを導入できたら、ログインの有無で表示が変わるように分岐%>
+      <%# <li><%= link_to current_user.nickname, "#", class: "user-nickname" </li> %>
+      <%# <li><%= link_to 'ログアウト', "#", method: :delete, class: "logout" </li> %>
+      <li><%= link_to 'ログイン(近日実装予定)', "#", class: "login" %></li>
+      <li><%= link_to '新規登録(近日実装予定)', "#", class: "sign-up" %></li>
+      <%# //deviseを導入できたら、ログインの有無で表示が変わるように分岐%>
+    </ul>
+  </div>
+</header>
