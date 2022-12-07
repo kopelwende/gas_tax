@@ -7,6 +7,21 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+      <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+      <%= javascript_include_tag '/javascript/jquery.japan-map.min.js' %>
+      <script>
+        $(function(){
+          $("#map-container").japanMap({
+              width:600,
+              onSelect : function(data){
+                  alert(data.name);
+              }
+            });
+         });
+    </script>
+
   </head>
 
   <body>
