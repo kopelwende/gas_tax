@@ -3,17 +3,22 @@
 }
 
 .top-page-header {
+  height: 15vw;
   width: 100vw;
   padding: 2vh 15vw;
   display: flex;
   flex-direction: column;
-  color: #0000FF;
+  color:#4689FF;
+  background-color: #000000;
 }
 
 .title{
   font-size: 60px;
+  font-weight: 700;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color:#4689FF;
 }
 
 .nav {
@@ -42,23 +47,23 @@
   text-decoration: none;
   margin-right: 3vw;
   font-weight: bold;
-  color: #0000FF;
+  color: #4689FF;
 }
 
 
 .logout {
   text-decoration: none;
-  color: #0000FF;
+  color: #4689FF;
 }
 
 .login {
   text-decoration: none;
   line-height: 32px;
   margin-right: 3vw;
-  color: #0000FF;
+  color: #4689FF;
 }
 
 .sign-up {
   text-decoration: none;
-  color: #0000FF;
+  color: #4689FF;
 }
