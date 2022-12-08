@@ -65,3 +65,33 @@
   height: 15vw;
   font-size: 20px
 }
+
+.total{
+  overflow-wrap: break-word;
+  display:flex;
+}
+
+.total_price{
+  overflow-wrap: break-word;
+  margin:5px 10px;
+}
+
+.total_tax{
+  overflow-wrap: break-word;
+  margin:5px 10px;
+}
+
+.month{
+  overflow-wrap: break-word;
+  display:flex;
+}
+
+.month_price{
+  overflow-wrap: break-word;
+  margin:5px 10px;
+}
+
+.month_tax{
+  overflow-wrap: break-word;
+  margin:5px 10px;
+}
