@@ -1,17 +1,47 @@
 <%# CSS・・・assets/stylesheets/shared/header.css %>
+
 <header class='top-page-header'>
-  <h1 class="title">ガソリン代ダイエット</h1>
+  
+  <div class="title_login">
+    <%= link_to 'ガソリンダイエット',root_path ,class: "title"%>
+    <div class='lists-right'>
+      <ul>
+        <%# deviseを導入できたら、ログインの有無で表示が変わるように分岐%>
+        <%# <li><%= link_to current_user.nickname, "#", class: "user-nickname" </li> %>
+        <%# <li><%= link_to 'ログアウト', "#", method: :delete, class: "logout" </li> %>
+        <li><%= link_to 'ログイン(近日実装予定)', "#", class: "login" %></li>
+        <li><%= link_to '新規登録(近日実装予定)', "#", class: "sign-up" %></li>
+        <%# //deviseを導入できたら、ログインの有無で表示が変わるように分岐%>
+      </ul>
+    </div>
+  </div>
   <div class='nav'>
-    <ul class='lists-left'>
-      <li>全国平均ガソリン単価<%#="#"%></li>
-    </ul>
-    <ul class='lists-right'>
-      <%# deviseを導入できたら、ログインの有無で表示が変わるように分岐%>
-      <%# <li><%= link_to current_user.nickname, "#", class: "user-nickname" </li> %>
-      <%# <li><%= link_to 'ログアウト', "#", method: :delete, class: "logout" </li> %>
-      <li><%= link_to 'ログイン(近日実装予定)', "#", class: "login" %></li>
-      <li><%= link_to '新規登録(近日実装予定)', "#", class: "sign-up" %></li>
-      <%# //deviseを導入できたら、ログインの有無で表示が変わるように分岐%>
-    </ul>
+    <div class ="left-side">
+      <div class = "year_month">
+        <% current = Time.now %>
+        <%= current.strftime("%Y年%m月%d日")%>
+      </div>
+    </div>
+    <div>
+      <div class="total">累計</div>
+      <div>全国総ガソリン代<%="100000円"%></div>
+      <div>全国総給油量<%="5000ℓ"%></div>
+      <div>全国平均<%="160円"%></div>
+      <div>全国最高値<%="185円"%></div>
+      <div>全国最安値<%="130円"%></div>
+      <div>国地方暫定税<%="50000円"%></div>
+      <div>国地方税金総額<%="25000円"%></div>
+    </div>
+    <div class='month'><%=current.strftime("%m月の") %>
+
+      <div>全国総ガソリン代<%="100000円"%></div>
+      <div>全国総給油量<%="5000ℓ"%></div>
+      <div>全国平均<%="160円"%></div>
+      <div>全国最高値<%="185円"%></div>
+      <div>全国最安値<%="130円"%></div>
+      <div>国地方暫定税<%="50000円"%></div>
+      <div>国地方税金総額<%="25000円"%></div>
+        </table>
+    </div>
   </div>
 </header>
