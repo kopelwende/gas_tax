@@ -22,26 +22,32 @@
         <%= current.strftime("%Y年%m月%d日")%>
       </div>
     </div>
-    <div>
-      <div class="total">累計</div>
-      <div>全国総ガソリン代<%="100000円"%></div>
-      <div>全国総給油量<%="5000ℓ"%></div>
-      <div>全国平均<%="160円"%></div>
-      <div>全国最高値<%="185円"%></div>
-      <div>全国最安値<%="130円"%></div>
-      <div>国地方暫定税<%="50000円"%></div>
-      <div>国地方税金総額<%="25000円"%></div>
+    <div class="total">累計
+      <div class="total_price">
+        <div>全国総ガソリン代<%="100000円"%></div>
+        <div>全国総給油量<%="5000ℓ"%></div>
+        <div>全国平均<%="160円"%></div>
+        <div>全国最高値<%="185円"%></div>
+        <div>全国最安値<%="130円"%></div>
+      </div>
+      <div class="total_tax">
+        <div>国地方暫定税<%="50000円"%></div>
+        <div>国地方税金総額<%="25000円"%></div>
+      </div>
     </div>
-    <div class='month'><%=current.strftime("%m月の") %>
 
+    <div class='month'><%=current.strftime("%m月の") %>
+      <div class="month_price">
       <div>全国総ガソリン代<%="100000円"%></div>
-      <div>全国総給油量<%="5000ℓ"%></div>
-      <div>全国平均<%="160円"%></div>
-      <div>全国最高値<%="185円"%></div>
-      <div>全国最安値<%="130円"%></div>
-      <div>国地方暫定税<%="50000円"%></div>
-      <div>国地方税金総額<%="25000円"%></div>
-        </table>
+        <div>全国総 給油量<%="5000ℓ"%></div>
+        <div>全国平均<%="160円"%></div>
+        <div>全国最高値<%="185円"%></div>
+        <div>全国最安値<%="130円"%></div>
+      </div>
+      <div class="month_tax">
+        <div>国地方暫定税<%="50000円"%></div>
+        <div>国地方税金総額<%="25000円"%></div>
+      </div>
     </div>
   </div>
 </header>
