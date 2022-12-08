@@ -21,8 +21,23 @@
 .region{
   height:80%;
   width: 100%;
-  color: #000000;
+  font-size: 40px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.prefectures{
+  color:rgba(0,0,0,1);
+  font-weight: 450;
+  text-decoration:none;
+  background:rgba(51,219,255,1);
+}
+
+.okinawa{
+  margin-top: 500px;
+}
+
+.hokkaidou{
+  margin-bottom: 500px;
 }
