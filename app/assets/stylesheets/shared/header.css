@@ -60,26 +60,30 @@
 }
 
 .nav {
-  justify-content: center;
   width: 100%;
-  height: 15vw;
-  font-size: 20px
+  height: 18vw;
+  font-size: 20px;
+  display:flex;
+}
+
+.left-side{
+margin-left:2vw;
 }
 
 .total{
   overflow-wrap: break-word;
   display:flex;
-  margin-left:40px;
+  margin:0 40px;
 }
 
 .total_price{
   overflow-wrap: break-word;
-  margin:5px 10px;
+  margin:5px 5px;
 }
 
 .total_tax{
   overflow-wrap: break-word;
-  margin:5px 10px;
+  margin:5px 5px;
 }
 
 .month{
@@ -90,10 +94,10 @@
 
 .month_price{
   overflow-wrap: break-word;
-  margin:5px 10px;
+  margin:5px 5px;
 }
 
 .month_tax{
   overflow-wrap: break-word;
-  margin:5px 10px;
+  margin:5px 5px;
 }
