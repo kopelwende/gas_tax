@@ -2,21 +2,30 @@
 
 <header class='top-page-header'>
   
-  <div class="title_login">
-    <%= link_to 'ガソリンダイエット',root_path ,class: "title"%>
-    <div class='lists-right'>
-      <ul>
-        <%# deviseを導入できたら、ログインの有無で表示が変わるように分岐%>
-        <%# <li><%= link_to current_user.nickname, "#", class: "user-nickname" </li> %>
-        <%# <li><%= link_to 'ログアウト', "#", method: :delete, class: "logout" </li> %>
-        <li><%= link_to 'ログイン', "#", class: "login" %></li>
-        <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
-        <%# //deviseを導入できたら、ログインの有無で表示が変わるように分岐%>
-      </ul>
+  <div class="title-login">
+    <div class="title">
+      <%= link_to 'ガソリンダイエット',root_path ,class: "title-text"%>
+    </div>
+    <div class='login-logon'>
+        <ul>
+          <%# deviseを導入できたら、ログインの有無で表示が変わるように分岐%>
+          <%# <li><%= link_to current_user.nickname, "#", class: "user-nickname" </li> %>
+          <%# <li><%= link_to 'ログアウト', "#", method: :delete, class: "logout" </li> %>
+          <li><%= link_to 'ログイン', "#", class: "login" %></li>
+          <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
+          <%# //deviseを導入できたら、ログインの有無で表示が変わるように分岐%>
+        </ul>
     </div>
   </div>
+    <div class="nav-top">
+      <div class="explanation">
+        <p>●このサイトはガソリンの価格を共有するサイトです。<br>
+        生活防衛のために生活圏内の最安値ガソリンを共有しましょう。<br>
+        また、ガソリン価格に揮発油税とは別に<b>余分</b>にかけられている<b>暫定税率</b>を算出して、これを撤廃してもらうよう訴えましょう！</p>
+      </div>
+     </div>
   <div class='nav'>
-    <div class ="left-side">
+    <div class ="date">
       <div class = "year_month">
         <% current = Time.now %>
         <%= current.strftime("%Y年%m月%d日")%>
@@ -35,10 +44,10 @@
         <div>国地方税金総額<%="25000円"%></div>
       </div>
     </div>
-    <div class='month'>今月の
+    <div class="month"><%= current.strftime("%m月の")%>
       <div class="month_price">
-      <div>全国総ガソリン代<%="100000円"%></div>
-        <div>全国総 給油量<%="5000ℓ"%></div>
+        <div>全国総ガソリン代<%="100000円"%></div>
+        <div>全国総給油量<%="5000ℓ"%></div>
         <div>全国平均<%="160円"%></div>
         <div>全国最高値<%="185円"%></div>
         <div>全国最安値<%="130円"%></div>
