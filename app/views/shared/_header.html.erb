@@ -20,7 +20,6 @@
       <div class = "year_month">
         <% current = Time.now %>
         <%= current.strftime("%Y年%m月%d日")%>
-        <%= mon = current.strftime("%m月の")%>
       </div>
     </div>
     <div class="total">累計
@@ -36,7 +35,7 @@
         <div>国地方税金総額<%="25000円"%></div>
       </div>
     </div>
-    <div class='month'><%= mon %>
+    <div class='month'>今月の
       <div class="month_price">
       <div>全国総ガソリン代<%="100000円"%></div>
         <div>全国総 給油量<%="5000ℓ"%></div>
