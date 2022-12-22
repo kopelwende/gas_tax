@@ -61,3 +61,5 @@ gem 'jcanvas-rails', '~> 0.1.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 
 gem "aws-sdk-s3", require: false
+
+gem'active_hash'
