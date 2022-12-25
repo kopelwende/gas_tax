@@ -1,7 +1,9 @@
 <footer class="footer">
-<%#<%if user_signed_in? %>
-  <%#<%= link_to "ユーザー名のガソリンの値段を入力する"%>
-<%#<% else %>
-  <%= link_to "未ログインでガソリンの値段を入力する",   new_gasoline_path %>
-<%#<%=end%>
-</footer>
+<div class="new-box" >
+  <%#<%if user_signed_in? %>
+    <%#<%= link_to "ユーザー名のガソリンの値段を入力する", "#", class: "new-message"%>
+  <%#<% else %>
+    <%= link_to "未ログインでガソリンの値段を入力する", new_gasoline_path , class: "new-message" %>
+  <%#<%=end%>
+  </footer>
+</div>

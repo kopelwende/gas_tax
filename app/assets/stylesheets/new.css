@@ -1,0 +1,16 @@
+.new-maim{
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.new-main-content{
+  height:80%;
+  width:40%;
+  background-color:	#4B0082;
+  color:black;
+  border-radius: 12px;
+  box-shadow: 5px  5px 10px; 
+}

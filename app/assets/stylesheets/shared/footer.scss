@@ -1,6 +1,33 @@
 .footer{
-  height: 10vh;
+  height: 20vh;
   width: 100vw;
   background-color: #000000;
   color: #ffffff;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.new-box{
+  height:70px;
+  width: 350px;
+  background-color: #808080;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px rgba(213, 200, 200, 0.3); 
+}
+
+.new-box:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0);
+}
+
+.new-message{
+  font-size:15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #00FFFF;
+
+}
+
